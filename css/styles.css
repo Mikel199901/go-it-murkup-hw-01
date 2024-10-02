@@ -207,9 +207,12 @@ html {
     letter-spacing: 0.02em;
 }
 
-.section-two-icon-item {
+.container-section-two-icon-item {
+    display: flex;
     background-color: #F4F4FD;
     border: 1px solid #8E8F99;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ============== Section three ============== */
