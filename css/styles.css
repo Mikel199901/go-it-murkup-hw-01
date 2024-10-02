@@ -215,6 +215,13 @@ html {
     justify-content: center;
 }
 
+.section-two-icon-item {
+    width: 64px;
+    height: 64px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
 /* ============== Section three ============== */
 
 .page-main .section-three {
