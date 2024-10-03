@@ -64,7 +64,11 @@ html {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.page-header .navigation::after .nav {
+.page-header .navigation .nav-one {
+    position: relative;
+}
+
+.page-header .navigation .nav-one::after {
     position: absolute;
     left: 0;
     bottom: -1px;
@@ -234,7 +238,7 @@ html {
     margin-bottom: 8px;
 }
 
-svg {
+.section-two svg {
     width: 64px;
     height: 64px;
     margin-top: 24px;
@@ -348,7 +352,7 @@ svg {
     background-color: #404bbf;
 }
 
-svg {
+.section-three svg {
     fill: #f4f4fd;
     width: 16px;
     height: 16px;
@@ -452,6 +456,11 @@ svg {
     padding-right: 16px;
 }
 
+.page-footer svg {
+    width: 24px;
+    height: 24px;
+}
+
 /* ============== Page footer ============== */
 
 .page-footer {
@@ -492,7 +501,6 @@ svg {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-left: 390px;
     color: #FFFFFF;
     margin-bottom: 16px;
 }
@@ -510,7 +518,6 @@ svg {
 .icon-list {
     position: absolute;
     display: flex;
-    margin-left: 390px;
     margin-top: 32px;
     gap: 16px;
 }
@@ -518,7 +525,6 @@ svg {
 .icon-list-item {
     width: 40px;
     height: 40px;
-    display: flex;
     column-gap: 16px;
 }
 
