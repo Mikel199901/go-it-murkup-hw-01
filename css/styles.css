@@ -13,12 +13,13 @@ html {
 /* ============== (Header) ============== */
 
 .page-header {
-    position: fixed;
-    z-index: 999;
-    width: 100%;
+    width: 1440px;
     height: 72px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #FFFFFF;
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header .container-page-header {
@@ -60,7 +61,7 @@ html {
     text-decoration: none;
     line-height: 24px;
     letter-spacing: 0.02em;
-    transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-header .navigation .nav:hover {
@@ -96,7 +97,7 @@ html {
     text-decoration: none;
     line-height: 24px;
     letter-spacing: 0.02em;
-    transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-header .contact .link:hover,
@@ -110,7 +111,11 @@ html {
     background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    max-width: 1440px;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page-main .container-section-one {
@@ -151,7 +156,7 @@ html {
     margin-top: 48px;
     border: none;
     border-radius: 4px;
-    transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-main .section-one .button:hover,
@@ -208,14 +213,17 @@ html {
 }
 
 .container-section-two-icon-item {
+    height: 112px;
     display: flex;
     background-color: #F4F4FD;
     border: 1px solid #8E8F99;
+    border-radius: 4px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 8px;
 }
 
-.section-two-icon-item {
+svg {
     width: 64px;
     height: 64px;
     margin-top: 24px;
@@ -254,6 +262,7 @@ html {
 .page-main .section-three .item {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     width: calc((100% - 72px) / 4);
     height: 428px;
 }
@@ -286,10 +295,52 @@ html {
     text-align: center;
 }
 
-#icon-list {
+.page-main .section-three .icon-list {
+    justify-content: center;
+    gap: 24px;
+}
+
+#icon-list-one {
     margin-top: 6px;
     margin-left: 16px;
     column-gap: 24px;
+}
+
+#icon-list-two {
+    margin-top: 6px;
+    margin-left: 16px;
+    column-gap: 24px;
+}
+
+#icon-list-three {
+    margin-top: 6px;
+    margin-left: 16px;
+    column-gap: 24px;
+}
+
+#icon-list-four {
+    margin-top: 6px;
+    margin-left: 16px;
+    column-gap: 24px;
+}
+
+.page-main .section-three .icon-link {
+    display: flex;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-main .section-three .icon-link:hover,
+.page-main .section-three .icon-link:focus {
+    background-color: #404bbf;
+}
+
+svg {
+    fill: #f4f4fd;
+    width: 16px;
+    height: 16px;
 }
 
 /* ============== Section four ============== */
@@ -309,6 +360,11 @@ html {
     padding-bottom: 32px;
     border: 1px solid #e7e9fc;
     border-top: none;
+}
+
+.page-main .section-four .border:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-main .section-four .title {
@@ -365,8 +421,9 @@ html {
     background-color: #4D5AE5;
     overflow: auto;
     transform: translateY(150%);
-    transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .page-main .section-four .item:hover .marketing-overlay {
     transform: translateY(0);
@@ -392,6 +449,15 @@ html {
     padding-bottom: 100px;
 }
 
+.page-footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-link {
+    margin-right: 120px;
+}
+
 .page-footer .link-studio {
     color: #4D5AE5;
     font-family: "Raleway", sans-serif;
@@ -409,10 +475,15 @@ html {
     color: #F4F4FD;
 }
 
-.page-footer .footer-title {
+.page-footer .footer-text {
     position: absolute;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     margin-left: 390px;
     color: #FFFFFF;
+    margin-bottom: 16px;
 }
 
 .page-footer .text {
@@ -430,36 +501,42 @@ html {
     display: flex;
     margin-left: 390px;
     margin-top: 32px;
-    column-gap: 16px;
+    gap: 16px;
 }
 
 .icon-list-item {
+    width: 40px;
+    height: 40px;
     display: flex;
     column-gap: 16px;
-    background-color: #4D5AE5;
-    border-radius: 50%;
 }
 
 .icon-link {
     display: flex;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     align-items: center;
     justify-content: center;
+    background-color: #4D5AE5;
+    border-radius: 50%;
 }
 
-.svg-media {
+.page-footer svg {
     width: 24px;
     height: 24px;
 }
 
-.icon-list-item:hover,
-.icon-list-item:focus {
+.svg-media {
+    fill:#f4f4fd;
+}
+
+.icon-link:hover,
+.icon-link:focus {
     background-color: #31D0AA;
     display: flex;
     column-gap: 16px;
     border-radius: 50%;
-    transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ============== FlexBox ============== */
