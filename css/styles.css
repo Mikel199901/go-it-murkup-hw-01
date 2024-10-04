@@ -276,6 +276,7 @@ html {
 }
 
 .page-main .section-three .menu {
+    justify-content: center;
     gap: 24px;
 }
 
@@ -285,6 +286,9 @@ html {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     width: calc((100% - 72px) / 4);
     height: 428px;
+}
+
+.page-main .section-three .icon-list-item {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -316,25 +320,7 @@ html {
     text-align: center;
 }
 
-#icon-list-one {
-    margin-top: 6px;
-    margin-left: 16px;
-    column-gap: 24px;
-}
-
-#icon-list-two {
-    margin-top: 6px;
-    margin-left: 16px;
-    column-gap: 24px;
-}
-
-#icon-list-three {
-    margin-top: 6px;
-    margin-left: 16px;
-    column-gap: 24px;
-}
-
-#icon-list-four {
+.section-three .icon-list {
     margin-top: 6px;
     margin-left: 16px;
     column-gap: 24px;
@@ -355,7 +341,7 @@ html {
     background-color: #404bbf;
 }
 
-.section-three .svg-media {
+.section-three svg {
     fill: #f4f4fd;
     width: 16px;
     height: 16px;
@@ -541,7 +527,7 @@ html {
     border-radius: 50%;
 }
 
-.page-footer .svg-media {
+.page-footer svg {
     fill: #f4f4fd;
     width: 24px;
     height: 24px;
