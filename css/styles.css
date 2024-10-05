@@ -445,10 +445,6 @@ html {
     color: #F4F4FD;
 }
 
-.page-footer svg {
-    width: 24px;
-    height: 24px;
-}
 
 /* ============== Page footer ============== */
 
@@ -485,13 +481,12 @@ html {
 }
 
 .page-footer .footer-text {
-    position: absolute;
+    position: relative;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-bottom: 16px;
 }
 
 .page-footer .text {
@@ -507,7 +502,7 @@ html {
 .icon-list {
     position: absolute;
     display: flex;
-    margin-top: 32px;
+    margin-top: 16px;
     gap: 16px;
 }
 
