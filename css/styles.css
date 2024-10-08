@@ -486,6 +486,7 @@ html {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    margin-bottom: 16px;
 }
 
 .page-footer .text {
@@ -501,7 +502,6 @@ html {
 .icon-list {
     position: absolute;
     display: flex;
-    margin-top: 16px;
     gap: 16px;
 }
 
