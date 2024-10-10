@@ -13,7 +13,6 @@ html {
 /* ============== (Header) ============== */
 
 .page-header {
-    width: 1440px;
     height: 72px;
     margin-left: auto;
     margin-right: auto;
@@ -141,7 +140,7 @@ html {
 .page-main .container-section-one {
     display: flex;
     flex-direction: column;
-    padding-top: 188px;
+    padding-top: 372px;
     padding-bottom: 412px;
 }
 
@@ -156,7 +155,6 @@ html {
     max-width: 526px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 188px;
 }
 
 .page-main .section-one .button {
@@ -168,8 +166,7 @@ html {
     line-height: 24px;
     letter-spacing: 0.04em;
     cursor: pointer;
-    max-width: 169px;
-    min-width: 169px;
+    width: 169px;
     height: 56px;
     margin-left: auto;
     margin-right: auto;
