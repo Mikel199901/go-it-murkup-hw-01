@@ -134,13 +134,13 @@ html {
     background-position: center;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .page-main .container-section-one {
     display: flex;
     flex-direction: column;
-    padding-top: 188px;
-    padding-bottom: 188px;
 }
 
 .page-main .section-one .title-one {
@@ -251,6 +251,8 @@ html {
 .page-main .container-section-three {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .page-main .section-three .title {
@@ -546,7 +548,6 @@ html {
 }
 
 .container {
-    position: relative;
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
